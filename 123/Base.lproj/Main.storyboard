@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_23" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="RBs-bA-hWp">
+                                <rect key="frame" x="288" y="70" width="65" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <color key="highlightedColor" systemColor="systemPinkColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6HE-Xz-i1P">
+                                <rect key="frame" x="0.0" y="189" width="375" height="478"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="0g4-hp-ndz">
+                                        <rect key="frame" x="-49" y="-45" width="489" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bhA-YF-dca">
+                                        <rect key="frame" x="16" y="58" width="343" height="363.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="222" translatesAutoresizingMaskIntoConstraints="NO" id="gUa-yr-CDb">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="53.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ue3-0x-nTU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60.5" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="AC">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="clearAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0G3-zg-sRu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUA-qx-p5L">
+                                                        <rect key="frame" x="282.5" y="0.0" width="60.5" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="/">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputOperand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2sT-au-OMb"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vr7-Xf-7Cy">
+                                                <rect key="frame" x="0.0" y="77.5" width="343" height="53.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnV-c7-dkY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="9">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputNumberWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AKZ-xd-DQt"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIW-WM-0on">
+                                                        <rect key="frame" x="93" y="0.0" width="64.5" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="8">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputNumberWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="arW-fW-muM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxe-hx-zQz">
+                                                        <rect key="frame" x="185.5" y="0.0" width="65" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="7">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputNumberWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJE-l8-kSW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dK-dy-p21">
+                                                        <rect key="frame" x="278.5" y="0.0" width="64.5" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="*">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputOperand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q7B-lR-Da2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="UVg-BG-pUC">
+                                                <rect key="frame" x="0.0" y="155" width="343" height="53.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIx-Nu-6If">
+                                                        <rect key="frame" x="0.0" y="0.0" width="65.5" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="4">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputNumberWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6l4-AL-hIj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3g-A5-V4Q">
+                                                        <rect key="frame" x="92.5" y="0.0" width="65.5" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="5">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputNumberWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CKf-FK-XrX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p48-eZ-tf3">
+                                                        <rect key="frame" x="185" y="0.0" width="65.5" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="6">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputNumberWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Np-Y5-7R5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trh-nh-4Ip">
+                                                        <rect key="frame" x="277.5" y="0.0" width="65.5" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="+">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputOperand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7H3-14-pRO"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="amW-hp-DwP">
+                                                <rect key="frame" x="0.0" y="232.5" width="343" height="53.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1n-D3-LTA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="65.5" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="1">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputNumberWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Esu-dR-T1D"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbs-Tk-i7F">
+                                                        <rect key="frame" x="92.5" y="0.0" width="65.5" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="2">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputNumberWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DhD-Xd-Hvn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOZ-Na-vDh">
+                                                        <rect key="frame" x="185" y="0.0" width="65.5" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="3">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputNumberWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kG4-qU-uSi"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbc-qj-gFq">
+                                                        <rect key="frame" x="277.5" y="0.0" width="65.5" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="-">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputOperand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BlN-CF-eT6"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="127" translatesAutoresizingMaskIntoConstraints="NO" id="cHq-qX-Sel">
+                                                <rect key="frame" x="0.0" y="310" width="343" height="53.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APM-UZ-TH5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="108" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="0">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="inputNumberWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AnM-mO-c59"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mz-lR-Jmb">
+                                                        <rect key="frame" x="235" y="0.0" width="108" height="53.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="=">
+                                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="resltAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KV4-A6-YSo"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <color key="tintColor" systemColor="systemTealColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonAC" destination="ue3-0x-nTU" id="KqE-a2-Jr5"/>
+                        <outlet property="buttonZero" destination="SUA-qx-p5L" id="Zh5-lj-acI"/>
+                        <outlet property="lable" destination="RBs-bA-hWp" id="Ilc-W8-W3k"/>
+                        <outlet property="staki" destination="bhA-YF-dca" id="4BB-Jq-dQr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.800000000000001" y="96.7016491754123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="line" width="394" height="63"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
